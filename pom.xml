@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>java</groupId>
-	<artifactId>java-app1</artifactId>
+	<artifactId>java-app2</artifactId>
 	<version>1.0</version>
 	<packaging>war</packaging>
         <dependencies>
