@@ -13,18 +13,18 @@ Steps are the following:
      * copy folder "src" to /tmp/src <br />
      * Go to /tmp folder then run "mvn package"<br />
       
-      The previos command will generate devopsarea-01.war<br />
+      The previos command will generate java-app2-01.war<br />
         
         B. Create tomcat container<br />
         
-     * Will move the file java-app1-01.war from maven container to /webapp in tomcat contaner<br />
+     * Will move the file java-app2-01.war from maven container to /webapp in tomcat contaner<br />
      * Do health check to make sure that the artifact is deployed
 
-3. Run 'docker build -t java-app1 .' <br />
+3. Run 'docker build -t java-app2 .' <br />
     
      * Will create a Docker image called devopsarea <br />
 
-4. Run ' docker run -d -p 2222:8080 java-app1 ' <br />
-     * Will create a container called java-app1 and will forward the container internal port 8080 to locathost 2222 in the hosted machine 
+4. Run ' docker run -d -p 3333:8080 java-app2 ' <br />
+     * Will create a container called java-app2 and will forward the container internal port 8080 to locathost 3333 in the hosted machine 
 
-5. Open [http://192.168.1.50:2222/java-app1-1.0/](http://192.168.1.50:2222/java-app1-1.0/) in your browser and see the result.
+5. Open [http://192.168.1.50:3333/java-app1-1.0/](http://192.168.1.50:3333/java-app1-1.0/) in your browser and see the result.
